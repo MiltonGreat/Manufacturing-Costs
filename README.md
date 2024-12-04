@@ -1,4 +1,4 @@
-# # Manufacturing Cost Prediction
+# Manufacturing Cost Prediction
 
 ## Project Overview
 
