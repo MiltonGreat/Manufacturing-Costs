@@ -1,5 +1,34 @@
 # Manufacturing Cost Prediction
 
+## Problem Statement
+
+Understanding the relationship between production volume and manufacturing costs is essential for identifying economies of scale.
+
+### Solution Approach:
+
+Data: Production data with variables like units produced, raw material costs, and energy consumption.
+
+Methods:
+
+- Applied regression models (Linear Regression, Polynomial Regression) to predict costs based on production volume.
+- Conducted sensitivity analysis to determine cost inflection points.
+- Visualized cost trends using Tableau dashboards.
+- Tools: Python (Scikit-learn, Matplotlib), Tableau.
+
+### Results:
+
+- Developed a cost prediction model with an R² of 0.88.
+- Identified production thresholds where economies of scale start to apply, leading to cost savings of 20%.
+- Recommendations informed decisions on production scaling.
+
+### Key Skills
+
+Regression modeling, cost analysis, data visualization, Python.
+
+### Future Directions
+
+Incorporate external factors like market demand and raw material price fluctuations into the model.
+
 ## Project Overview
 
 This project explores the relationship between the number of units produced and manufacturing costs, leveraging regression models to predict manufacturing costs based on production volume. It aims to estimate costs and analyze economies of scale, helping manufacturers optimize production.
