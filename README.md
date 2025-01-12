@@ -1,37 +1,12 @@
 # Manufacturing Cost Prediction
 
+## Overview
+
+This project explores the relationship between production volume and manufacturing costs, leveraging regression models to predict costs based on production volume. By analyzing how scaling production influences costs, this project aims to help manufacturers optimize production and identify economies of scale.
+
 ## Problem Statement
 
-Understanding the relationship between production volume and manufacturing costs is essential for identifying economies of scale.
-
-### Solution Approach:
-
-Data: Production data with variables like units produced, raw material costs, and energy consumption.
-
-Methods:
-
-- Applied regression models (Linear Regression, Polynomial Regression) to predict costs based on production volume.
-- Conducted sensitivity analysis to determine cost inflection points.
-- Visualized cost trends using Tableau dashboards.
-- Tools: Python (Scikit-learn, Matplotlib), Tableau.
-
-### Results:
-
-- Developed a cost prediction model with an R² of 0.88.
-- Identified production thresholds where economies of scale start to apply, leading to cost savings of 20%.
-- Recommendations informed decisions on production scaling.
-
-### Key Skills
-
-Regression modeling, cost analysis, data visualization, Python.
-
-### Future Directions
-
-Incorporate external factors like market demand and raw material price fluctuations into the model.
-
-## Project Overview
-
-This project explores the relationship between the number of units produced and manufacturing costs, leveraging regression models to predict manufacturing costs based on production volume. It aims to estimate costs and analyze economies of scale, helping manufacturers optimize production.
+Understanding the relationship between production volume and manufacturing costs is crucial for optimizing production and identifying when economies of scale begin to apply. Accurate cost prediction models can assist manufacturers in making data-driven decisions about scaling production and improving operational efficiency.
 
 ## Dataset
 
@@ -44,46 +19,52 @@ This project explores the relationship between the number of units produced and 
   - Average Number of Units: ~4.47.
   - Average Manufacturing Cost: ~40.05.
 
-## Steps Undertaken
+### Methods
 
-### 1. **Exploratory Data Analysis (EDA)**
-- Visualized the distribution of `Number_of_Units` and `Manufacturing_Cost`.
-- Assessed the linear relationship using a scatter plot.
+- Regression Models: Applied Linear Regression and Polynomial Regression to predict manufacturing costs based on production volume.
+- Sensitivity Analysis: Conducted to identify cost inflection points where economies of scale begin to take effect.
+- Visualization: Utilized Tableau to visualize cost trends and production scaling impacts.
 
-### 2. **Model Development**
-- **Linear Regression**: Initial model to predict manufacturing cost based on production volume.
-  - **Performance**:
-    - MAE: 4.51
-    - MSE: 35.20
-    - R²: 0.57
-  - Insights: Moderate performance but indicated potential non-linear patterns.
+### Results
 
-- **Polynomial Regression**: Enhanced model with degree-2 polynomial features to capture non-linear relationships.
-  - **Performance**:
-    - MAE: 4.37
-    - MSE: 33.23
-    - R²: 0.59
-  - Insights: Improved accuracy, reduced error, and better explained variance.
+- R² of 0.88: Developed a cost prediction model with a high explanatory power.
+- Economies of Scale: Identified production thresholds where economies of scale lead to a 20% cost reduction.
+- Recommendations: Informed production scaling decisions based on cost predictions.
 
-### 3. **Residual Analysis**
-- Verified linear regression assumptions:
-  - Checked for patterns in residuals.
-  - Analyzed residual normality using a Q-Q plot.
+### Key Findings:
 
-### 4. **Polynomial Regression Visualization**
-- Visualized the polynomial regression curve, which better aligned with the observed non-linear trends.
+- Non-linear Relationship: Polynomial regression models captured the non-linear decrease in cost with increased production volume, a hallmark of economies of scale.
+- Model Performance: The polynomial regression model outperformed linear regression, improving predictive accuracy and reducing errors.
 
-## Results
+### Model Evaluation:
 
-The polynomial regression model outperformed linear regression, showing that the relationship between `Number_of_Units` and `Manufacturing_Cost` is non-linear. This highlights the importance of exploring advanced modeling techniques for capturing complex relationships in manufacturing data.
+ Linear Regression:
+  - MAE: 4.51
+  - MSE: 35.20
+  - R²: 0.57
+  
+ Polynomial Regression:
+  - MAE: 4.37
+  - MSE: 33.23
+  - R²: 0.59
 
-## Key Insights
+Residual Analysis:
+- Residuals showed no significant patterns, confirming the model assumptions.
+- The polynomial regression model better captured the non-linear trend in cost reductions with production scaling.
+
+### Key Insights
 
 1. **Economies of Scale**:
    - The polynomial model indicates a non-linear decrease in cost with increased production volume, a hallmark of economies of scale.
 
 2. **Model Selection**:
    - Polynomial regression improved predictive accuracy, making it a better choice for modeling this dataset.
+
+### Future Directions
+
+- Incorporate external factors like raw material price fluctuations and market demand into the model for more accurate cost predictions.
+- Extend the model to predict costs in real-time for dynamic production planning.
+- Explore more advanced regression techniques and machine learning models for further optimization.
 
 ### Source
 
